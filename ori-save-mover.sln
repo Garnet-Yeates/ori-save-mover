@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ori-save-mover", "ori-save-mover\ori-save-mover.csproj", "{FF0E3CC7-07AE-49C6-ABCB-BCC40803D857}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF0E3CC7-07AE-49C6-ABCB-BCC40803D857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0E3CC7-07AE-49C6-ABCB-BCC40803D857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0E3CC7-07AE-49C6-ABCB-BCC40803D857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0E3CC7-07AE-49C6-ABCB-BCC40803D857}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {116FFA93-2C87-4F1B-92F8-41A5DA9C6093}
+	EndGlobalSection
+EndGlobal
