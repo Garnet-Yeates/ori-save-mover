@@ -19,7 +19,6 @@ namespace ori_save_mover
             shiftDownwardsButton.Enabled = false;
         }
 
-        private readonly Regex rg = new(@"\A[0-9]+\b");
         private readonly Regex rg = new(@"\A[0-9]+");
 
         private string[] fileNames = Array.Empty<string>();
@@ -173,12 +172,6 @@ namespace ori_save_mover
 
             resetAllFields();
             this.infoLabel.Text = $"Done! Another one?";
-
-        }
-
-        private void infoLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

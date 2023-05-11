@@ -120,7 +120,6 @@ namespace ori_save_mover
             this.infoLabel.Size = new System.Drawing.Size(262, 19);
             this.infoLabel.TabIndex = 3;
             this.infoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.infoLabel.Click += new System.EventHandler(this.infoLabel_Click);
             // 
             // Form1
             // 
