@@ -20,7 +20,7 @@ namespace ori_save_mover
         }
 
         private readonly Regex rg = new(@"\A[0-9]+\b");
-        private string[] fileNames;
+        private string[] fileNames = Array.Empty<string>();
         private string path = "";
         private string fileName = "";
         private string directory = "";
@@ -32,6 +32,7 @@ namespace ori_save_mover
             this.fileName = "";
             this.directory = "";
             this.start = -1;
+            this.fileNames = Array.Empty<string>();
             this.infoLabel.Text = DefaultLabelText;
             this.shiftUpwardsButton.Enabled = false;
             this.shiftDownwardsButton.Enabled = false;
