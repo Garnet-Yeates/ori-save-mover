@@ -64,6 +64,15 @@ namespace ori_save_mover
                     this.directory = info.DirectoryName;
                     this.fileNames = Directory.GetFiles(directory, "*.uberstate").Select(path => new FileInfo(path).Name).ToArray();
 
+                    // fileNames is sorted the same way windows explorer sorts by name
+                    // When you choose a file to shift up, it will shift itself up, as well as all of the files that come after it
+                    // (based on how you see the files are ordered in windows explorer list mode, sorted alphabetically)
+                    // This means that if you have file structure that looks like this:
+                    //   001 - YStart to Glades
+                    //   001 - ZStart to Glades
+                    // And you choose to shift ZStart to glades up, it will NOT shift YStart to glades up with it, since Z start is later
+                    Array.Sort(this.fileNames, new NumericComparer());
+
                     if (!this.fileNames.Any())
                     {
                         resetAllFields();
@@ -132,6 +141,7 @@ namespace ori_save_mover
             }
 
             // We know matches for sure exist here
+            // fileNames is sorted the same way windows explorer sorts by name
             for (int i = 0; i < fileNames.Length; i++)
             {
                 string currFileName = fileNames[i];
