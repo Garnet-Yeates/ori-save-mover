@@ -20,6 +20,8 @@ namespace ori_save_mover
         }
 
         private readonly Regex rg = new(@"\A[0-9]+\b");
+        private readonly Regex rg = new(@"\A[0-9]+");
+
         private string[] fileNames = Array.Empty<string>();
         private string path = "";
         private string fileName = "";
