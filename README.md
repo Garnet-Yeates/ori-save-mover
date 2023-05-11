@@ -14,8 +14,21 @@ This is annoying to do, because we control the order of the saves by numbering t
 and `008 - Grab Regenerate`, I would have to manually rename `008 - Grab Regenerate` to `009`, and then repeat this process on `009` and above (which can be dozens of saves). So far I've only been practicing MQO but I've
 already ran into this problem multiple times. I could only imagine what it is like for people who have hundreds of saves and want to insert some new ones to try different tricks.
 
+### My Solution
 That's where this tool comes in. It allows you to select a save file, and then press upshift of downshift. For example if I selected `008 - Grab Regenerate` and pressed `shift upwards`, it will automatically shift the
 number (`008`) up by one, as well as any files that come after it (so `009`, `010` ... `024`) (*based on Windows Explorer 'sort by name'*), which can save you a lot of work.
 
 Shifting downwards is similar: it modifies the selected file itself as well as the files that come *after* it based on name sorting, the only difference is that the numbers will go down by one. This can be used if you 
 decide you no longer need a save point. You can just delete the save point that you no longer want, then downshift the save point above it.
+
+### Warning
+
+I have not tested this too too much. I coded this in one day and I attempted to make it as robust as possible. It works beautifully on my saves (which are formatted the same was as shown above), but if yours are
+formatted ***drastically*** different from mine, it may not work as expected. It simply uses a regular expression to find repeating sequences of numbers at the beginning of the file names.
+
+#### Here's a few examples of ones that work:
+
+![](https://i.gyazo.com/5a7dba22ecd9072ea913c81caa40f2cf.png)
+
+Also, it does not matter if you have 3 digits, less, or more:<br>
+![](https://i.gyazo.com/a647b1c4aaaaba2eaaef63fdddfcff84.png)
